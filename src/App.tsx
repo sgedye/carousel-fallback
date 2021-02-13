@@ -1,6 +1,11 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import * as React from "react";
+// import { Loading } from "./components/Loading";
+import { ConditionallyRendered } from "./components/conditionallyRendered";
+// import { BigImage } from "./components/bigImage";
+import logo from "./logo.svg";
+import "./styles/App.css";
+
+// const Carousel = React.lazy(() => import("./components/carousel"));
 
 function App() {
   return (
@@ -19,6 +24,14 @@ function App() {
           Learn React
         </a>
       </header>
+
+      <h1>Test 1 using lazy &amp; suspense</h1>
+      {/* <React.Suspense fallback={<Loading />}> */}
+      {/* <Carousel /> */}
+      {/* </React.Suspense> */}
+
+      <h1>Test 2 conditionally rendering</h1>
+      <ConditionallyRendered />
     </div>
   );
 }

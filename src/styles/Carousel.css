@@ -1,0 +1,26 @@
+.carousel-container {
+  width: 100vw;
+  max-width: 600px;
+  overflow-x: scroll;
+  margin: 0 auto;
+}
+
+.carousel {
+  display: flex;
+}
+
+.carousel-item {
+  min-width: 300px;
+  max-width: 300px;
+  margin: 0 0.5rem;
+}
+
+.carousel-item > img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.attribution {
+  text-align: center;
+}
